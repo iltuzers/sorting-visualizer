@@ -264,3 +264,39 @@ async function pauseBubbleSort() {
 async function resumeBubbleSort() {
     currentState = "running";
 }
+
+async function startHeapSort() {
+
+}
+
+async function pauseHeapSort() {
+
+}
+
+async function resumeHeapSort() {
+
+}
+
+async function startMergeSort() {
+
+}
+
+async function pauseMergeSort() {
+
+}
+
+async function resumeMergeSort() {
+
+}
+
+async function startQuickSort() {
+
+}
+
+async function pauseQuickSort() {
+
+}
+
+async function resumeQuickSort() {
+    
+}
