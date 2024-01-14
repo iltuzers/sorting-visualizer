@@ -1,0 +1,123 @@
+
+body {
+    font-family: 'Times New Roman', 'Roboto', sans-serif;
+    font-size: 18px;
+    background-color: hsl(219, 26%, 49%);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Styles for the main container of the application */
+.container {
+    background-color: hsl(0, 0%, 90%);
+    border-radius: 10px;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 20px;
+
+}
+
+/* Styles for the container that holds the speed control slider */
+.slider-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;  
+}
+
+/* Styles for the speed control slider */
+#speed {
+    appearance: none;
+    width: 80%;
+    height: 10px;
+    background: linear-gradient(to right, #9eb7bd, rgb(12, 165, 235));
+    outline: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    position: relative;
+}
+
+#barCount {
+    width: 42px;
+    height: 20px;
+    margin-left: 5px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    background-color: rgb(114, 201, 241);
+    border: 2px solid #2980b9;
+}
+
+.sorting-options,
+.sorting-controls {
+    margin-bottom: 20px;
+}
+
+.sorting-options label {
+    padding: 10px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+button {
+    background-color: rgb(114, 201, 241);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.4s ease;
+}
+
+.sorting-options label:hover,
+.sorting-controls button:hover,
+.bar-control button:hover {
+    background-color: #2980b9;
+    border-radius: 5px;
+}
+
+/* Styles for the container that holds the button for generating a new array */
+.bar-control {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bar-container {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(219, 26%, 49%);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 0 -5px 10px hsla(219, 26%, 49%, 0.8);
+
+}
+
+/* Styles for individual bars*/
+.bar {
+    width: 10px;
+    margin: 0 2px;
+    background-color: rgb(114, 201, 241);
+    display: inline-block;
+}
+
+/* Styles for bars that are being compared */
+.comparing {
+    background-color: red;
+}
+
+.swapping {
+    background-color: yellow;
+}
+
+/* Styles for bars that are sorted */
+.sorted {
+    background-color: #2ecc72;
+}
